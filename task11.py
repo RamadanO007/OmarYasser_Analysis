@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import time
 
+#this is task 1 q1
 def power_i(x, n):
     result = 1
     for i in range(n):
@@ -28,7 +29,7 @@ def measure_time(func, x, n, repetitions=1000):
 
 def main():
     n_values = [10**i for i in range(7)]  # Powers of 10 from 1 to 10^6
-    iterations = 10  # Number of iterations to measure average time
+    iterations = 10  
 
     times_i = []
     times_divid = []
