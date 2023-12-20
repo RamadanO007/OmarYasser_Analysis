@@ -1,0 +1,25 @@
+
+
+Time Analysis:
+
+Our dynamic programming algorithm for gene sequence alignment has a time complexity of O(mn), where 'm' and 'n' denote the lengths of the input sequences. The efficiency arises from a nested loop structure employed to fill a dynamic programming matrix.
+
+Approach:
+
+Using dynamic programming, our algorithm efficiently identifies the highest-scoring alignment between two gene sequences. This is facilitated by a scoring matrix designed for evaluating nucleotide matches and gaps.
+
+1. Initialization:
+   - A matrix (`dp_matrix`) is set up to store scores for subproblems. With dimensions (n+1) x (m+1), it aptly accommodates the lengths of the input sequences.
+
+2. Filling the Matrix
+   - Iterating over each matrix position, scores for matching nucleotides and introducing gaps in sequences 'x' or 'y' are computed. The matrix gracefully embraces the highest score among these choices.
+
+3.traceback:
+   - A traceback from the bottom-right corner of the matrix impeccably reconstructs the highest-scoring alignment based on past decisions.
+
+4. output:
+   - The algorithm gifts us the highest-scoring alignment, elegantly presented in a format comprehensible to humans.
+
+Conclusion:
+
+Our algorithm rises to the challenge, addressing gene sequence alignment with finesse through dynamic programming. The O(mn) time complexity ensures scalability, and the code stands as a testament to clarity and readability, fostering adaptability for diverse applications. The chosen approach harmoniously facilitates an optimal alignment.
